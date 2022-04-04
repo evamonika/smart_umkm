@@ -94,10 +94,10 @@ class SignIn extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 25),
             Container(
-              width: 385,
-              height: 55,
+              width: 365,
+              height: 50,
               child: TextButton(
                 style: TextButton.styleFrom(
                   shape: RoundedRectangleBorder(
@@ -117,7 +117,7 @@ class SignIn extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 30, left: 70),
+              padding: const EdgeInsets.only(top: 20, left: 70),
               child: Row(
                 children: [
                   Text(
