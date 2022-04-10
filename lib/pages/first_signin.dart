@@ -21,11 +21,20 @@ class SignIn extends StatelessWidget {
             ),
             SizedBox(height: 50),
             Text(
-              'Sign In Account \nWelcome back',
+              'Sign In Account',
               style: GoogleFonts.poppins(
                 color: Colors.white,
                 fontSize: 22,
                 fontWeight: FontWeight.w500,
+              ),
+            ),
+            SizedBox(height: 4),
+            Text(
+              'Welcome back to \nour account',
+              style: GoogleFonts.poppins(
+                color: Color(0xffaaaaaa),
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
               ),
             ),
             SizedBox(height: 50),
