@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_umkm/pages/dashboard.dart';
 
 class SmartModal extends StatelessWidget {
   static String tag = 'smart_modal';
@@ -6,6 +7,12 @@ class SmartModal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+         icon: Icon(Icons.arrow_back_ios),
+          onPressed: (){
+            Navigator.of(context).pushNamed(Dashboard.tag);
+          },
+        ),
         title: Text("Smart Modal"),
       ),
       body: ListView(

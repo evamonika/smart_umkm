@@ -1,7 +1,9 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:smart_umkm/pages/smart_bayar.dart';
 import 'package:smart_umkm/pages/smart_modal.dart';
+import 'package:smart_umkm/pages/smart_pasar.dart';
 
 class Dashboard extends StatelessWidget {
   static String tag = 'dashboard';
@@ -108,7 +110,9 @@ class Dashboard extends StatelessWidget {
           child: Image.asset('assets/store 1.png',
             width: 106,
             height: 130,),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushNamed(SmartPasar.tag);
+          },
         )
         ),
         Container(
@@ -150,7 +154,9 @@ class Dashboard extends StatelessWidget {
           child: Image.asset('assets/pay 1.png',
             width: 106,
             height: 130,),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushNamed(SmartBayar.tag);
+          },
         )
         ),
         Container(

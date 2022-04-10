@@ -4,7 +4,9 @@ import 'package:smart_umkm/pages/first_signup.dart';
 import 'package:smart_umkm/pages/first_splash.dart';
 import 'package:smart_umkm/pages/first_started.dart';
 import 'package:smart_umkm/pages/first_signin.dart';
+import 'package:smart_umkm/pages/smart_bayar.dart';
 import 'package:smart_umkm/pages/smart_modal.dart';
+import 'package:smart_umkm/pages/smart_pasar.dart';
 
 void main() => runApp(SmartUMKM());
 
@@ -14,6 +16,8 @@ class SmartUMKM extends StatelessWidget {
     SignUp.tag: (context) => SignUp(),
     Dashboard.tag: (context) => Dashboard(),
     SmartModal.tag: (context) => SmartModal(),
+    SmartPasar.tag: (context) => SmartPasar(),
+    SmartBayar.tag: (context) => SmartBayar(),
   };
   @override
   Widget build(BuildContext context) {
