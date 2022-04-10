@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smart_umkm/pages/dashboard.dart';
 import 'package:smart_umkm/pages/first_signup.dart';
 
 class SignIn extends StatelessWidget {
@@ -107,7 +108,9 @@ class SignIn extends StatelessWidget {
                   ),
                   backgroundColor: Color(0xffFCAC15),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(Dashboard.tag);
+                },
                 child: Text(
                   'Sign In',
                   style: GoogleFonts.poppins(
