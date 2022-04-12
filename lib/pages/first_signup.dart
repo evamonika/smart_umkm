@@ -14,12 +14,12 @@ class SignUp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
-              child: Image.asset('assets/logokecil.png',
+                child: Image.asset(
+              'assets/logokecil.png',
               width: 106,
               height: 100,
-            )
-            ),
-            SizedBox(height: 50),
+            )),
+            SizedBox(height: 20),
             Text(
               'Sign Up Account',
               style: GoogleFonts.poppins(
@@ -28,7 +28,7 @@ class SignUp extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 20),
             Text(
               'Username',
               style: GoogleFonts.poppins(
@@ -37,7 +37,7 @@ class SignUp extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 8),
             TextFormField(
               style: GoogleFonts.poppins(
                 color: Colors.white,
@@ -55,7 +55,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
             ),
-             SizedBox(height: 10),
+            SizedBox(height: 8),
             Text(
               'Email',
               style: GoogleFonts.poppins(
@@ -64,7 +64,7 @@ class SignUp extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 8),
             TextFormField(
               style: GoogleFonts.poppins(
                 color: Colors.white,
@@ -82,7 +82,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 8),
             Text(
               'Password',
               style: GoogleFonts.poppins(
@@ -107,12 +107,10 @@ class SignUp extends StatelessWidget {
                 hintText: 'Password',
                 hintStyle: GoogleFonts.poppins(
                   color: Color(0xffAAAAAA),
-                ),               
+                ),
               ),
             ),
-            SizedBox(height: 6),
-
-                    SizedBox(height: 16),
+            SizedBox(height: 8),
             Text(
               'Confirm Password',
               style: GoogleFonts.poppins(
@@ -137,12 +135,10 @@ class SignUp extends StatelessWidget {
                 hintText: 'Confirm Password',
                 hintStyle: GoogleFonts.poppins(
                   color: Color(0xffAAAAAA),
-                ),               
+                ),
               ),
             ),
-            SizedBox(height: 6),
-          
-            SizedBox(height: 25),
+            SizedBox(height: 16),
             Container(
               width: 365,
               height: 50,
@@ -154,8 +150,8 @@ class SignUp extends StatelessWidget {
                   backgroundColor: Color(0xffFCAC15),
                 ),
                 onPressed: () {
-                Navigator.of(context).pushNamed(SignIn.tag);
-              },
+                  Navigator.of(context).pushNamed(SignIn.tag);
+                },
                 child: Text(
                   'Sign Up',
                   style: GoogleFonts.poppins(
@@ -165,7 +161,7 @@ class SignUp extends StatelessWidget {
                   ),
                 ),
               ),
-            ),           
+            ),
           ],
         ),
       ),

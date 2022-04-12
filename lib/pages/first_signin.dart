@@ -19,7 +19,7 @@ class SignIn extends StatelessWidget {
               width: 106,
               height: 100,
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 45),
             Text(
               'Sign In Account',
               style: GoogleFonts.poppins(
@@ -37,7 +37,7 @@ class SignIn extends StatelessWidget {
                 fontWeight: FontWeight.w400,
               ),
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 45),
             Text(
               'Username',
               style: GoogleFonts.poppins(
@@ -58,13 +58,13 @@ class SignIn extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide.none,
                 ),
-                hintText: 'Eva Monika Septiana',
+                hintText: 'Username',
                 hintStyle: GoogleFonts.poppins(
                   color: Color(0xffAAAAAA),
                 ),
               ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 15),
             Text(
               'Password',
               style: GoogleFonts.poppins(
@@ -106,7 +106,7 @@ class SignIn extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 25),
+            SizedBox(height: 24),
             Container(
               width: 365,
               height: 50,
@@ -141,30 +141,27 @@ class SignIn extends StatelessWidget {
                       //alignment: Alignment(1, 0.5),
                     ),
                   ),
-                  SizedBox(width: 5),
+                  SizedBox(width: 8),
                   Container(
-                  child: TextButton(
-                  style: TextButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  backgroundColor: Color(0xffFCAC15),
-                ),
-                  onPressed: () {
-                  Navigator.of(context).pushNamed(SignUp.tag);
-                 },
-                  child:Text(
-                    'Sign Up',
-                    style: GoogleFonts.poppins(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      decoration: TextDecoration.underline,              
-                    ),               
-                  )
-                  )
-                  )
+                      child: TextButton(
+                          style: TextButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            backgroundColor: Color(0xffFCAC15),
+                          ),
+                          onPressed: () {
+                            Navigator.of(context).pushNamed(SignUp.tag);
+                          },
+                          child: Text(
+                            'Sign Up',
+                            style: GoogleFonts.poppins(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              decoration: TextDecoration.underline,
+                            ),
+                          )))
                 ],
-                  
               ),
             ),
           ],
